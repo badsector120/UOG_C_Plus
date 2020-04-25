@@ -1,20 +1,21 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-	int n,c;
-	float g,Max=0;
-	cout<<"The number of students:";
-	cin>>n;
-	for(int i=1;i<=n;i++)
+int main() {
+	int n, c;
+	float g, Max = 0;
+	cout << "The number of students:";
+	cin >> n;
+	for (int i = 1; i <= n; i++)
 	{
-		cin>>g;
-		if(g>Max)
+		cout << "Enter Average of " << i << "th student:";
+		cin >> g;
+		if (g > Max)
 		{
-			Max=g;
-			c=i;
+			Max = g;
+			c = i;
 		}
 	}
-	cout<<"The "<<c<<"th student has gained the Max grade which is:"<<Max;
-	
+	cout << "The " << c << "th student has gained the Max grade which is:" << Max;
+
 }
